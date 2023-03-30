@@ -1,0 +1,690 @@
+@import url(common.css);
+
+
+
+/*---------------header----------*/
+/*----탑버튼*/
+#top_btn{
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	z-index: 9999;
+	background:url(../image/topbtn.png);
+}
+	#top_btn a{
+		display: block;
+		line-height: 50px;
+		text-align: center;
+		text-shadow: 0px 5px 5px #fff;
+		font-weight: bold;
+	}
+
+	/*------------------------------------------------------------header--------*/
+
+	header{
+		width: 100%;
+		height: 700px;
+		background:url(../image/back.png) no-repeat top center;
+		background-size: cover;
+		-webkit-background-size: cover;  /*트롬,사파리*/
+		-moz-background-size: cover;   /*파이어폭스*/
+	}
+
+	/*--top menu----------------------*/
+	.header_in{
+		width: 100%;
+		height: 80px;
+		background: #996;
+	}
+
+	.top_item{
+		width: 1024px;
+		margin: 0 auto;
+	}
+
+
+	/*-----------유틸*/
+	.util_area{
+		text-align: right;
+	}
+	.util_area ul{
+		display: inline-block;
+	}
+	.util_area ul li{
+		float: left;
+		margin: 5px;
+	}
+	.util_area ul li a{
+		color: #fff;
+		font-weight: bold;
+	}
+	.util_area ul li:hover a{
+		text-shadow: 
+		3px 1px 2px #363,
+		1px 2px 4px #696,
+		2px 3px 6px #030;
+	}
+	/*--------------로고*/
+	.logo{
+		float: left;
+		margin-left: 20px; 
+	}
+
+
+	/*----------------메뉴*/
+	.nav{
+		float: left;
+		text-align: center;
+	}
+	.nav ul{
+		display: inline-block;
+		line-height: 30px;
+		margin-left:300px; 
+	}
+	.nav ul li{
+		float: left;
+		margin: 12px;
+	}
+	.nav ul li a{
+		display: block;
+		color: #fff;
+		font-weight: bold;
+		font-size: 18px;
+	}
+	.nav ul li:hover a{
+		text-shadow: 
+		3px 1px 2px #363,
+		1px 2px 4px #696,
+		2px 3px 6px #030;
+	}
+
+	/*----------------------아이콘*/
+	.bicon{
+		float: right;
+	}
+
+	.bicon ul{}
+	.bicon ul li{
+		float: left;
+		margin: 13px 10px 7px 10px;
+	}
+	.bicon ul li a{
+		color: #fff;
+	}
+
+	.bicon ul li:hover a{
+		text-shadow: 
+		3px 1px 2px #363,
+		1px 2px 4px #696,
+		2px 3px 6px #030;
+	}
+	/*-------------------------공부차 다원 글씨*/
+	.caption{
+		width: 1024px;
+		height: 550px;
+		margin: 0 auto;
+		text-align: center;
+		color: #fff;
+	}
+	.caption h5{
+		padding-top: 150px;
+		font-weight: 100;
+		font-size: 14px;
+	}
+	.caption h2{
+		font-size: 70px;
+		padding: 20px 0;
+		font-weight: 100;
+	}
+	.caption h3{
+		margin-bottom: 50px;
+		font-size: 16px;
+	}
+	/*---------------------------더보기버튼*/
+	.caption .morevbtn{
+		width: 80px;
+		height: 35px;
+		border: 2px solid #fff;
+		margin: 0 auto;
+	}
+
+	.caption .morevbtn a{
+		color: #fff;
+		font-size: 16px;
+		font-weight: bold;
+		line-height: 35px;
+	}
+
+	.caption .morevbtn:hover{
+		background: #996;
+	}
+	.caption .morevbtn:hover a{
+
+	}
+
+/*-----------------------section----------*/
+section{
+
+}
+.section_wrap{
+	width: 1024px;
+	margin: 0 auto;
+}
+	.section_wrap h3{
+		color: #363;
+		font-size: 30px;
+		font-weight: bold;
+		margin:15px;
+		padding-top: 25px;
+	}
+	.section_wrap hr{
+		width:600px;
+		padding-left: 10px;
+		margin-bottom: 20px;
+	}
+
+
+/*-----------티소믈리에*/
+#tea_som{
+	width: inherit;
+	height: 650px;
+}
+	#tea_som h4{
+		color: #363;
+		font-size: 16px;
+		margin:15px; 
+	}
+
+	.som_img{
+		margin:40px 0 0 110px;
+		text-align: center
+	}
+	.som_img ul{display: inline-block;}
+	.som_img ul li{
+		display: block;
+		float: left;
+		margin: 5px;
+	}
+	.som_img ul li a{
+		color: #fff;
+		position: relative;
+	}
+	.som_img ul li a .fbox{
+		width: 270px;
+		height: 80px;
+		background: rgba(0,0,0,0.6);
+		position: absolute;
+		z-index: 100;
+		transition:all 0.4s;
+	}
+	.som_img ul li a p{
+		position: relative;
+		z-index: 400;
+		font-size: 20px;
+		font-weight: bold;
+		line-height: 80px;
+	}
+	.som_img ul li a h5{
+		position: absolute;
+		z-index: 200;
+		width: 270px;
+		color: #fff;
+		font-size: 16px;
+		font-weight:100;
+		padding-top: 100px;
+		opacity: 0;
+		transition: all 0.4s;
+	}
+	.som_img ul li:hover a .fbox{
+		height: 400px;
+	}
+	.som_img ul li:hover h5{
+		opacity: 1;
+	}
+	.som_img ul li:hover p{
+		text-shadow: 
+		3px 1px 2px #363,
+		1px 2px 4px #696,
+		2px 3px 6px #030;
+	}
+
+
+	/*---------------------------각각 설정하는 부분--*/
+	.sombox1{
+		width: 270px;
+		height: 400px;
+		background: url(../image/sombox1.png) no-repeat center center;
+		transition: all 0.4s;
+	}
+	.sombox2{
+		width: 270px;
+		height: 400px;
+		background: url(../image/sombox2.png) no-repeat center center;
+		transition: all 0.4s;
+	}
+	.sombox3{
+		width: 270px;
+		height: 400px;
+		background: url(../image/sombox3.png) no-repeat center center;
+		transition: all 0.4s;
+	}
+
+	.sombox1:hover{
+		background: url(../image/sombox1-2.png) no-repeat center center;
+	}
+	.sombox2:hover{
+		background: url(../image/sombox2-2.png) no-repeat center center;
+	}
+	.sombox3:hover{
+		background: url(../image/sombox3-2.png) no-repeat center center;
+	}
+
+
+/*------------오늘의 차---*/
+#tea{
+	width: inherit;
+	height: 650px;
+	margin-bottom: 30px; 
+}
+
+	.tea_img{
+		display: block;
+		width: 680px;
+		float: left;
+		margin: 30px 0 70px 30px;
+	}
+
+	.teabox{
+		width:270px; 
+		height:200px;
+		float: left;
+		margin: 10px;
+		padding-left: 30px;
+	}
+	.teabox ul{position: relative;}
+	.teabox img,
+	.tealong img{
+		position: absolute;
+		z-index: 10;
+		transition: all 0.2s;
+	}
+	.teabox:hover img,
+	.tealong:hover img{
+		filter: blur(2px);
+		-webkit-filter: blur(2px);
+	}
+	.teabox p,
+	.tealong p{
+		position: absolute;
+		z-index: 100;
+		font-size: 20px;
+		margin: 20px;
+		color: #fff;
+		font-weight: bold;
+		text-shadow: 
+		3px 1px 2px #333,
+		1px 2px 4px #333,
+		2px 3px 6px #333;
+		transition: all 0.4s;
+		opacity: 1;
+		}
+	.teabox h5,
+	.tealong h5{
+		position: absolute;
+		z-index: 200;
+		transition: all 0.4s;
+		margin: 50px 0 0 20px;
+		color: #fff;
+		font-size: 14px;
+		font-weight: 100;
+		text-shadow: 
+		3px 1px 2px #000;
+		opacity: 1;
+	}
+	.teabox:hover p,
+	.tealong:hover p,
+	.teabox:hover h5,
+	.tealong:hover h5{opacity: 0;}
+
+	
+	.tbox,
+	.tboxlong{
+		position: absolute;
+		z-index: 300;
+		text-align: center;
+		opacity: 0;
+		transition: all 0.4s;
+	}
+	.tbox:hover,
+	.tboxlong:hover{opacity: 1;}
+	.tealong{
+		float: left;
+		width: 270px;
+		height: 420px;
+		position: relative;
+		margin: 40px 10px 70px 0;
+	}
+	.tbox ul{
+		width: 230px;
+		height: 160px;
+		margin: 20px;
+		border-radius: 10px;
+		background: rgba(51,51,51,0.5);
+	}
+	.tboxlong ul{
+		width: 230px;
+		height: 350px;
+		margin: 20px;
+		padding-top: 30px;
+		border-radius: 10px;
+		background: rgba(51,51,51,0.5);
+	}
+	.tbox ul li,
+	.tboxlong ul li{
+		font-size: 12px;
+		font-weight: 100;
+		font-weight: bold;
+		color: #fff;
+	}
+	.tboxlong ul li{
+		margin: 10px 0;
+	}
+	.tbox ul li a,
+	.tboxlong ul li a{
+		width: 50px;
+		height: 20px;
+		border: 1px solid #fff;
+		color: #fff;
+	}
+	.tbox ul li:hover a,
+	.tboxlong ul li:hover a{
+		border: 1px solid #cfc;
+		color: #cfc;
+		text-shadow: 
+		3px 1px 2px #363,
+		1px 2px 4px #696,
+		2px 3px 6px #030;
+	}
+	.tbox ul li:last-child,
+	.tboxlong ul li:last-child{
+		margin-top: 10px;
+		padding: 5px;
+	}
+
+
+/*---------------------------------찻자리--------*/
+#tea_ware{
+	width: inherit;
+	/*height: 650px;*/
+	clear: both;
+	margin-bottom: 120px;
+}
+.goods{	margin-left:112px; }
+.big_goods{
+	width: 800px;
+	height: 400px;
+	position: relative;
+}
+.big_goods img{
+	position: absolute;
+	z-index: 1;
+	transition: all 0.2s;
+}
+.big_goods:hover img{
+	filter: blur(2px);
+	-webkit-filter: blur(2px);
+}
+.big_goods span{
+	width: 800px;
+	height: 0;
+	position: absolute;
+	z-index: 100;
+	background: rgba(0,0,0,0.7);
+	transition: all 0.5s ease; 
+}
+.big_goods:hover span{
+	height: 400px;
+}
+.big_goods div{
+	width: 300px;
+	height: 200px;
+	position: absolute;
+	z-index: 200;
+	text-align: center;
+	margin: 100px 250px;
+	opacity: 0;
+	transition: all 0.4s;
+}
+.big_goods div h4{
+	color: #fff;
+	font-size: 24px;
+	font-weight: bold;
+}
+.big_goods div p{
+	color: #fff;
+	font-size: 16px;
+	font-weight: normal;
+	margin-top: 30px; 
+}
+.big_goods:hover div{opacity: 1;}
+.big_goods a{
+	display: block;
+	width: 160px;
+	height: 40px;
+	position: absolute;
+	z-index: 300;
+	color: #fff;
+	border:1px solid #fff;
+	text-align: center;
+	line-height: 40px;
+	font-size: 18px;
+	margin:260px 320px 100px 320px;
+	opacity: 0;
+	transition: all 0.4s;
+}
+
+.big_goods:hover a{opacity: 1;}
+.big_goods a:hover{
+	text-shadow: 
+	3px 1px 2px #696,
+	1px 2px 4px #9c9,
+	2px 3px 6px #fff;
+}
+.goods ul{text-align: center;}
+.goods ul li{
+	display: inline-block;
+	float: left;
+	width: 192px;
+	height:52px;
+	background: #696;
+	border:4px solid #696;
+	transition: all 0.4s;
+}
+.goods ul li a{
+	line-height: 52px;
+	color: #030;
+	font-weight: bold;
+	font-size:16px;
+}
+.goods ul li:hover{
+	background: #363;
+	border:4px solid #030;
+}
+.goods ul li:hover a{
+	color: #fff;
+	text-shadow: 
+	3px 1px 2px #696,
+	1px 2px 4px #9c9,
+	2px 3px 6px #fff;
+}
+
+
+
+
+/*----------------------------지점소식----*/
+/*#tea_shop{
+	width: inherit;
+	height: 650px;
+}
+
+*/
+
+
+/*-----------------------------------공부차이야기----------*/
+
+#about{
+	width: inherit;
+	height: 720px;
+	clear: both;
+}
+	.bigbox{
+		width: 900px;
+		height: 500px;
+		margin: 62px;
+		background:url(../image/bigbox.png);
+		position: relative;
+	}
+
+	.bigbox .us1{
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		z-index: 100;
+		background:url(../image/us0.png);
+		margin: 0 800px 400px 0;
+		transition: all 0.4s;
+		cursor: pointer;
+	}
+	.bigbox .us1:hover{
+		width: 900px;
+		height: 500px;
+		z-index: 4000;
+		background:url(../image/us1.png);
+		margin: 0 0 0 0;
+	}
+
+	.bigbox .us2{
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		z-index: 200;
+		background:url(../image/us0.png);
+		margin: 0 0 400px 800px;
+		transition: all 0.4s;
+		cursor: pointer;
+	}
+	.bigbox .us2:hover{
+		width: 900px;
+		height: 500px;
+		z-index: 4000;
+		background:url(../image/us2.png);
+		margin: 0 0 0 0;
+	}
+
+	.bigbox .us3{
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		z-index: 300;
+		background:url(../image/us0.png) ;
+		margin:400px 800px 0 0 ;
+		transition: all 0.4s;
+		cursor: pointer;
+	}
+	.bigbox .us3:hover{
+		width: 900px;
+		height: 500px;
+		z-index: 4000;
+		background:url(../image/us3.png);
+		margin: 0 0 0 0;
+	}
+
+	.bigbox .us4{
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		z-index: 400;
+		background:url(../image/us0.png);
+		margin:400px 0 0 800px;
+		transition: all 0.4s;
+		cursor: pointer;
+	}
+	.bigbox .us4:hover{
+		width: 900px;
+		height: 500px;
+		z-index: 4000;
+		background:url(../image/us4.png);
+		margin: 0 0 0 0;
+	}
+
+/*------------------------------footer-----*/
+footer{
+		width: 100%;
+		background:#996;
+}
+	.footer_wrap{
+		width: 1024px;
+		height: 200px;
+		margin: 0 auto;
+		padding-top:20px; 
+	}
+
+	.left_foot{
+		float: left;
+		margin-left: 30px;
+	}
+	.left_foot h3{
+		color: #fff;
+		margin: 5px;
+	}
+	.left_foot h4{
+		color: #fff;
+		margin: 5px;
+		line-height: 20px;
+	}
+
+
+	.undl{
+		clear: both;
+		text-align: center;
+	}
+	.undl ul{display: inline-block;}
+	.undl ul li{
+		float:left;
+		margin: 5px;
+	}
+	.undl ul li a{
+		color: #fff;
+		text-decoration: underline;
+	}
+	.undl ul li a:hover{
+		color: #030;
+	}
+
+	.right_foot{
+		float: right;
+		margin-right: 30px;
+	}
+	.right_foot h3{
+		color: #fff;
+		margin: 5px;
+	}
+	.right_foot h4{
+		color: #fff;
+		margin: 5px;
+		line-height: 20px;
+	}
+
+
+	.footer_wrap hr{
+		clear: both;
+		width:1000px;
+		margin: 10px auto;
+	}
+
+	.footer_wrap address{
+		text-align: center;
+		font-size: 12px;
+	}
